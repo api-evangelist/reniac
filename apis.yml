@@ -1,7 +1,31 @@
 aid: reniac
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/reniac.png
 name: Reniac
-description: Reniac is a company surfaced as a portfolio company of bullpen-capital and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  rENIAC Inc. is a Santa Clara-based data acceleration company whose flagship
+  product, the rENIAC Data Engine (rDE), is a drop-in accelerator for open source
+  and NoSQL databases such as Apache Cassandra. Combining FPGAs with proprietary
+  software, rDE speeds storage, network, and compute operations and can be
+  deployed as a hardware-optimized cache, a transparent data-acceleration proxy,
+  or a scalable storage engine on-prem, hybrid, or in the cloud (including early
+  availability on AWS). rENIAC targets ultra-low-latency, real-time workloads —
+  AI/ML, fraud prevention, payment processing, electronic trading, and
+  recommendation engines — claiming up to 10x throughput, 13x lower latency, and
+  significant TCO and CPU reductions. rENIAC ships an infrastructure/hardware
+  acceleration product and does not publish a public developer API, OpenAPI
+  definition, SDKs, or API documentation; this profile captures company identity
+  and a domain-security probe.
 url: https://raw.githubusercontent.com/api-evangelist/reniac/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +33,19 @@ x-backed-by:
 - bullpen-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-no-api-surface: true
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Data
+- Database
+- Data Acceleration
+- FPGA
+- Hardware Acceleration
+- Infrastructure
+- Performance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +55,20 @@ maintainers:
 common:
 - type: Website
   url: https://www.reniac.com
+- type: Blog
+  url: https://www.reniac.com/news
+- type: GitHubOrganization
+  url: https://github.com/reniac
+- type: X
+  url: https://twitter.com/reniacinc
+- type: LinkedIn
+  url: https://www.linkedin.com/company/6464236/
+- type: YouTube
+  url: https://www.youtube.com/channel/UCWqTo7om8rvLNEACgiu9waQ
+- type: DomainSecurity
+  url: security/reniac-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
